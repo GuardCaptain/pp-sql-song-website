@@ -3,7 +3,7 @@ SQL Personal Project
 
 Dataset was obtained from https://github.com/MinaElkholy42/Song-Website-Data-Analysis/tree/main
 
-Getting the csv into a database in PostgreSQL
+**Getting the csv into a database in PostgreSQL**
 
 Steps:
 1) Downloaded the two CSV files 'songs' and 'events' and placed them into the 'Data' folder
