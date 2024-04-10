@@ -8,6 +8,8 @@
 - [Analysis](#analysis)
 - [Results](#results)
 - [Visualization](#visualization)
+- [Limitations](#limitations)
+- [References](#references)
 
 ### Project Overview
 This data analysis project aims to provide insights into the website page containing data about songs. By analyzing various aspects of the website data, we seek to identify trends, gain a deeper understanding of the data, and provide data-driven reccomendations.
