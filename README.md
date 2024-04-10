@@ -6,6 +6,7 @@
 - [Preprocessing](#preprocessing)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Analysis](#analysis)
+- [Results](#results)
 - [Visualization](#visualization)
 
 ### Project Overview
@@ -46,7 +47,13 @@ ORDER BY year DESC``` we believe that the rows with a value of 0 in the year col
 We also joined thet two tables ```SELECT *
 FROM events e
 INNER JOIN songs s ON e.artist = s.artist_name``` but with one table having 8000+ rows while the other only having 79 rows, we cannot get much information. Also, we are only able to merge the two tables based off the artist name and song titles. There is no key ID that connects both tables, thus concluding our joined table analysis. 
-  
+
+### Results
+
+The analysis results are summarized as follows:
+1. Paid members have more song searches than free members.
+2. Coldplay is the most searched artist, and "You're The One" is the most searched song.
+3. Kate Harrell (userId 97) has the most searches for Coldplay and "You're The One".
 
 ### Visualization  
 Here is a dashboard created on Tableau that displays Users information in a easy to navigate way.  
