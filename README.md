@@ -4,24 +4,25 @@
 - [Project Overview](#project-overview)
 - [Data Sources](#data-sources)
 - [Preprocessing](#preprocessing)
+- [Analysis](#analysis)
+- [Visualization](#visualization)
 
 ### Project Overview
-This data analysis project aims to provide insights into the website page containing data about songs. By analyzing various aspects of the sales data, we seek to identify trends, gain a deeper understanding of the data, and provide data-driven reccomendations.
+This data analysis project aims to provide insights into the website page containing data about songs. By analyzing various aspects of the website data, we seek to identify trends, gain a deeper understanding of the data, and provide data-driven reccomendations.
 
 ### Data Sources
-Data was obtained from [Data](https://github.com/MinaElkholy42/Song-Website-Data-Analysis/tree/main)
+The two primary datasets used for this analysis was the "songs.csv" and "events.csv"  
+Data was obtained from [here](https://github.com/MinaElkholy42/Song-Website-Data-Analysis/tree/main)
 
-### Preprocessing
-**Getting the csv into a database in PostgreSQL**
-
+### Preprocessing  
 Steps:
 1) Downloaded the two CSV files 'songs' and 'events' and placed them into the 'Data' folder
 2) Opened up pgAdmin and created a database called 'song_website_db'
 3) Created two tables, 'songs' and 'events', with their respective column names.
 4) Events table contain columns: artist(varchar), auth(varchar), firstName(varchar), gender(varchar), itemInSession(numeric), lastName(varchar), length(numeric), level(varchar), method(varchar), page(varchar), registration(numeric), session(numeric), song(varchar), status(numeric), ts(numeric), userAgent(varchar), userId(numeric)
 5) Songs table contain columns: artist_id(varchar), artist_latitude(numeric), artist_location(varchar), artist_longitude(numeric), artist_name(varchar), duration(numeric), num_songs(integer), song_id(varchar), title(varchar), year(integer)
-6) Imported the values from the csv files into their respective tables. --- Songs file imported successfully, but events file ran into issues. It turns out that the 'Escape' in the Options tab (when importing data into the table) had to be a double quote (") for it to successfully import into the events table. ---
-7) Tested to see if data was imported successfully with queries,  SELECT * FROM Public."events" and SELECT * FROM Public."songs"
+6) Imported the values from the csv files into their respective tables.  *Songs file imported successfully, but events file ran into issues. It turns out that the 'Escape' in the Options tab (when importing data into the table) had to be a double quote (") for it to successfully import into the events table*. 
+7) Tested to see if data was imported successfully with queries,  ```SELECT * FROM Public."events"``` and ```SELECT * FROM Public."songs"```
 
 After successfully creating the database and tables, I began my analysis with SQL queries
 
@@ -33,7 +34,7 @@ After concluding my analysis of the events table, I proceeded to the songs table
 We also joined thet two tables, but with one table having 8000+ rows while the other only having 79 rows, we cannot get much information. Also, we are only able to merge the two tables based off the artist name and song titles. There is no key ID that connects both tables, thus concluding our joined table analysis. 
   
 
-### Tableau Visualization  
+### Visualization  
 Here is a dashboard created on Tableau that displays Users information in a easy to navigate way.  
 
 https://public.tableau.com/app/profile/mitchell1520/viz/SongsWebsiteDashboard/WebsiteDashboard?publish=yes 
