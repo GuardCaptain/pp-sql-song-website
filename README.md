@@ -59,3 +59,11 @@ The analysis results are summarized as follows:
 Here is a dashboard created on Tableau that displays Users information in a easy to navigate way.  
 
 https://public.tableau.com/app/profile/mitchell1520/viz/SongsWebsiteDashboard/WebsiteDashboard?publish=yes 
+
+### Limitations
+
+There were a lot of missing values in the songs table, which limited our analysis on that table. There also wasn't enough rows in the songs table to combine the two tables together effectively to gain further insight.
+
+### References
+
+1. [Sql Tutorial](https://www.sqltutorial.org/sql-window-functions/sql-partition-by/)
