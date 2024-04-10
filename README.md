@@ -57,9 +57,14 @@ The analysis results are summarized as follows:
 2. Coldplay is the most searched artist, and "You're The One" is the most searched song.
 3. Kate Harrell (userId 97) has the most searches for Coldplay and "You're The One".
 
-### Visualization  
-Here is a dashboard created on Tableau that displays Users information in a easy to navigate way.  
+### Visualization
 
+Here is an image of the dashboard I created on Tableau that displays user information in an easy to navigate way.  
+
+ ![WebsiteDashboard](https://github.com/GuardCaptain/pp-sql-song-website/assets/108430815/f80a7200-99c9-4e7b-885f-697237d1f592)  
+
+ Link to the interact with it [here](https://public.tableau.com/app/profile/mitchell1520/viz/SongsWebsiteDashboard/WebsiteDashboard?publish=yes)
+ 
 ### Limitations
 
 There were a lot of missing values in the songs table, which limited our analysis on that table. There also wasn't enough rows in the songs table to combine the two tables together effectively to gain further insight.
